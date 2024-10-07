@@ -1,0 +1,6 @@
+asyncpg
+sqlalchemy
+google-cloud-sql-connector
+colorama
+python-dotenv
+faker

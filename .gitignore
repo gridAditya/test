@@ -1,0 +1,4 @@
+.venv/
+.aider*
+.env
+*/.env
