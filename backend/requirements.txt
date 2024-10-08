@@ -1,7 +1,11 @@
 fastapi
 sqlalchemy
-google-cloud-sql
+cloud-sql-python-connector[pg8000]
+cloud-sql-python-connector[asyncpg]
 python-dotenv
 pandas
 plotly
 asyncpg
+uvicorn
+greenlet
+asyncio
