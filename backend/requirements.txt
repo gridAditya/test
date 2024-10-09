@@ -9,3 +9,9 @@ asyncpg
 uvicorn
 greenlet
 asyncio
+colorama
+pytest
+pytest-asyncio
+pytest-cov
+pytest-html
+pytest-metadata
