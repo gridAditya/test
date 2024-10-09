@@ -1,6 +1,12 @@
-asyncpg
+fastapi
 sqlalchemy
-google-cloud-sql-connector
-colorama
+cloud-sql-python-connector[pg8000]
+cloud-sql-python-connector[asyncpg]
 python-dotenv
-faker
+pandas
+plotly
+asyncpg
+uvicorn
+greenlet
+asyncio
+colorama

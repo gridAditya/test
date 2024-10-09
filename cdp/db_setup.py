@@ -277,13 +277,13 @@ def prepare_response_data(
 
 
 def prepare_behavior_data(
-    fake: Faker, count: int, num_cutomer: int
+    fake: Faker, count: int, num_customer: int
 ) -> List[Dict[str, Any]]:
     sources = ["organic search", "paid ad", "direct", "social media", "email"]
 
     return [
         {
-            "customer_id": random.randint(1, num_cutomer),
+            "customer_id": random.randint(1, num_customer),
             "visit_date": fake.date_between(start_date="-1y", end_date="today"),
             "pages_viewed": random.randint(1, 20),
             "time_spent": random.randint(30, 1800),
@@ -301,9 +301,7 @@ async def main():
 
     connector = await create_async_connector()  # Initialize Cloud SQL Connector
     engine = await init_connection_pool(connector)  # Initialize connection pool
-    Session = sessionmaker(
-        engine, expire_on_commit=False, class_=AsyncSession
-    )  # session manager
+    Session = sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)  # session manager
 
     try:
         print(
